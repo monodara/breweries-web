@@ -1,0 +1,9 @@
+.slide-container {
+  text-align: center;
+}
+
+.slide-container img {
+  width: 60%;
+  margin: 0 auto; /* Horizontally center the images */
+  display: block; /* Ensure the images are displayed as block elements */
+}

@@ -1,0 +1,12 @@
+.block {
+  display: flex;
+  justify-content: center;
+}
+h1,
+p {
+  text-align: center;
+  padding: 1rem;
+}
+p {
+  color: red;
+}
