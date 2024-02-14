@@ -8,9 +8,10 @@ const containerStyle = {
 };
 
 function MapComponent({ lat, lng }: MapPosition) {
+  const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyBpVFhNlgH5R3QvgCIRWmDgvGCGhf4cf3A",
+    googleMapsApiKey: apiKey ?? "Default Key",
   });
   const center = {
     lat: lat,
